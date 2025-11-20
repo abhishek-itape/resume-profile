@@ -1,0 +1,182 @@
+body {
+    background: linear-gradient(135deg, #1a1a1a 0%, #504747 60%, #8b6f4e 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    min-height: 100vh;
+
+    /* Center the entire resume */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centered section wrapper */
+.profile-section {
+    width: 100%;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 16px;
+}
+
+/* Resume Cards */
+.card {
+    background: rgba(38, 38, 38, 0.96);
+    border-radius: 20px;
+    box-shadow: 0 6px 28px rgba(44, 39, 35, 0.25);
+    padding: 32px 24px;
+    margin: 22px 0;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #8b6f4e;
+}
+
+.intro-card {
+    border-bottom: 6px solid #8b6f4e;
+}
+
+/* Avatar styling */
+.avatar, 
+.avatar-small {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border: 4px solid #726e6e;
+    margin-bottom: 16px;
+    background: #333;
+}
+
+.avatar-small {
+    width: 64px;
+    height: 64px;
+    border: 2.5px solid #8b6f4e;
+    margin-bottom: 18px;
+    background: #222;
+}
+
+/* Heading */
+h1 {
+    margin: 8px 0 4px 0;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 2.1em;
+}
+
+/* Sub meta text */
+.meta {
+    color: #bababa;
+    margin: 8px 0 14px 0;
+    font-size: 1.03em;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    /* center alignment */
+    align-items: center;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 20px 0 0 0;
+    background: linear-gradient(90deg, #252321, #8b6f4e);
+    color: #fff;
+    border-radius: 22px;
+    font-size: 1.08em;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 2px 10px #1a1a1a60;
+    transition: background 0.17s, box-shadow 0.17s;
+}
+
+.btn:hover,
+.brown-btn:hover {
+    background: linear-gradient(90deg, #8b6f4e, #252321);
+    box-shadow: 0 4px 16px #8b6f4e99;
+}
+
+.brown-btn {
+    background: linear-gradient(90deg, #8b6f4e, #3a2c1a);
+}
+
+/* Details Card */
+.card.detail-card {
+    text-align: left;
+    padding-top: 24px;
+}
+
+/* Grid layout */
+.details-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 18px 0 12px 0;
+    justify-content: center; /* center items */
+}
+
+.details-grid > div {
+    flex: 1 1 210px;
+    min-width: 190px;
+    padding-right: 14px;
+    background: rgba(255,255,255,0.02);
+    border-radius: 12px;
+    padding: 12px 14px;
+}
+
+/* Section Titles */
+h2 {
+    color: #e8e8e8;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    font-size: 1.09em;
+    border-bottom: 2px solid #8b6f4e;
+    padding-bottom: 2px;
+}
+
+/* Links */
+a, a:visited {
+    color: #cfa97e;
+}
+
+a:hover {
+    color: #fff;
+}
+
+/* List */
+ul {
+    margin: 0;
+    padding-left: 19px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Mobile responsive */
+@media (max-width: 700px) {
+    .profile-section {
+        padding-top: 30px;
+    }
+
+    .details-grid {
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 22px 12px;
+        max-width: 95%;
+    }
+
+    .avatar {
+        width: 88px;
+        height: 88px;
+    }
+}
