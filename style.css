@@ -180,3 +180,21 @@ li {
         height: 88px;
     }
 }
+.download-btn.gold {
+    display: inline-block;
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #f7d774, #d4a335);
+    color: #000;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(212, 163, 53, 0.6);
+    transition: 0.3s;
+}
+
+.download-btn.gold:hover {
+    background: linear-gradient(135deg, #ffe28a, #e0b34a);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(212, 163, 53, 0.75);
+}
